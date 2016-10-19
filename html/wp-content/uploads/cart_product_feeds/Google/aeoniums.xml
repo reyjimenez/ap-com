@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0" xmlns:c="http://base.google.com/cns/1.0">
+  <channel>
+    <title>aeoniums</title>
+    <link><![CDATA[https://altmanplants.com/wp-content/uploads/cart_product_feeds/Google/aeoniums.xml]]></link>
+    <description>aeoniums</description>
+	<item>
+        <g:id>979</g:id>
+        <g:item_group_id>866</g:item_group_id>
+        <title><![CDATA[<em>aeonium Percarneum</em> 'kiwi']]></title>
+        <description><![CDATA[Leaves have ciliate margins, and are pale yellow with ciliate margins with green mistripes and rose edges in drought or cool weather. Porous soil with adequate drainage. Filtered light and ample airflow. Water thoroughly when soil is dry to the touch. Summer dormant; preferable to provide cool shade during dormancy. Protect from frost.]]></description>
+        <link><![CDATA[https://altmanplants.com/plant-shop/aeonium-percarneum-kiwi/]]></link>
+        <g:product_type><![CDATA[default]]></g:product_type>
+        <g:google_product_category><![CDATA[Home & Garden > Plants]]></g:google_product_category>
+        <g:image_link><![CDATA[https://altmanplants.com/wp-content/uploads/Aeonium-Kiwi.jpg]]></g:image_link>
+        <g:condition>New</g:condition>
+        <g:availability>in stock</g:availability>
+        <g:price>5.00 USD</g:price>
+        <g:mpn><![CDATA[0850004]]></g:mpn>
+        <g:shipping_weight>.3 lbs</g:shipping_weight>
+        <g:shipping_length>3 in</g:shipping_length>
+        <g:shipping_width>3 in</g:shipping_width>
+        <g:shipping_height>4 in</g:shipping_height>
+        <g:brand>Altman Plants</g:brand>
+	</item>
+  </channel>
+</rss>

@@ -1,0 +1,208 @@
+body {
+  direction: rtl;
+  unicode-bidi: embed;	
+}
+/**
+* Header
+*/
+#header.header-v2 #nav-primary { 
+	right: inherit !important;
+}
+#sidebar {
+	padding: 36px 36px 36px 0;
+}
+#sidebar.left-sidebar {
+	padding: 36px 0 36px 36;
+	float: left;
+}
+#content.right-sidebar {
+	float: right;
+}
+/**
+* Blog
+*/
+.post-meta p {
+	float: right;
+}
+.post-meta p:first-child {
+	margin-right: 0 !important;
+}
+.post-meta p>span.fa {
+	float: right;
+}
+.post-title {
+	position: relative;
+	padding-right: 52px;
+	margin-right: 0 !important;
+}
+.post-title>span {
+	left: inherit !important;
+	right: 0 !important;
+}
+/* pagination */
+.page-pagination {
+	float: right;	
+}
+.page-pagination>a:last-child {
+	margin-right: 0 !important;
+}
+/* newer older posts */
+.newer-older {
+	display: inline-block;
+	left: 0;
+	right: inherit !important;
+}
+.newer-older>a {
+	float: right;
+}
+.newer-older>a:last-child {
+	padding-left: 0 !important;
+}
+/* share this */
+#ozy-share-div>span {
+	float: right !important;
+}
+#ozy-share-div {
+	text-align: left !important;
+}
+#ozy-share-div>a {
+	margin-left: 0 !important;
+	margin-right: 4px !important;
+}
+/* related posts */
+.ozy-related-posts .related-post-item h4 {
+	left: inherit !important;
+	right: 20px !important;
+	text-align: right;
+}
+/* author box */
+#post-author .gravatar {
+	float: right;
+}
+/**
+* Mega Menu
+*/
+.mega-menu .sub-menu h4,
+.mega-menu .sub-menu a {
+	text-align: right;
+}
+/**
+* Folio single
+*/
+.portfolio-details-part-one {
+	float: right !important;
+	padding-right: 0 !important;
+	padding-left: 20px !important;
+}
+.portfolio-details-part-two {
+	float: left !important;
+	padding-left: 0 !important;
+}
+.portfolio-details-part-two.has-border {
+	padding-right: 20px !important;	
+	border-left: 1px solid transparent !important;
+	border-right: 1px solid #dedede;
+}
+/**
+* Footer
+*/
+#footer-text>div {float: right !important;}
+/**
+* Royal Slider
+*/
+.rsMinCW .infoBlockTopLeft {
+	left: inherit !important;
+	right: 30px !important;
+	text-align: right;
+}
+/**
+* To Top Button
+*/
+#to-top-button {
+	right: inherit !important;
+	left: 20px;
+}
+/**
+* WooCommerce
+*/
+.woocommerce ul.products li.product .onsale, .woocommerce-page ul.products li.product .onsale {
+	left: 0 !important;
+	right: inherit !important;
+}
+.products>li>.ozy-product-overlay>a:active, .products>li>.ozy-product-overlay>a {
+	left: auto !important;
+	right: 20px !important;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs, 
+.woocommerce-page div.product .woocommerce-tabs ul.tabs, 
+.woocommerce #content div.product .woocommerce-tabs ul.tabs, 
+.woocommerce-page #content div.product .woocommerce-tabs ul.tabs,
+
+.woocommerce div.product .woocommerce-tabs .panel, 
+.woocommerce-page div.product .woocommerce-tabs .panel, 
+.woocommerce #content div.product .woocommerce-tabs .panel, 
+.woocommerce-page #content div.product .woocommerce-tabs .panel,
+
+.woocommerce div.product form.cart, 
+.woocommerce-page div.product form.cart, 
+.woocommerce #content div.product form.cart, 
+.woocommerce-page #content div.product form.cart,
+
+.woocommerce .product_meta {
+	float: right;
+	clear: both;
+}
+.woocommerce .star-rating, 
+.woocommerce-page .star-rating {
+	float: left;
+}
+.ozy-ajax-shoping-cart {
+	padding: 10px 0 10px 10px;
+}
+.ozy-ajax-shoping-cart>a>i {
+	border-right: none !important;
+	border-left: 1px solid #dedede;
+	margin: 0 0 0 10px !important;
+}
+.woocommerce-message>a.button, 
+.woocommerce-error>a.button, 
+.woocommerce-info>a.button {
+	float: left !important;
+}
+.woocommerce .addresses .title h3, 
+.woocommerce-page .addresses .title h3 {
+	float: right !important;
+}
+.woocommerce .order_details li, 
+.woocommerce-page .order_details li {
+	float: right;
+	margin-right: 0;
+	padding-right: 0;
+	padding-left: 2em;
+	margin-left: 2em;
+	border-right: none;
+	border-left: 1px dashed #e0dadf;
+}
+.woocommerce table.shop_table, 
+.woocommerce-page table.shop_table,
+.woocommerce table.shop_table tfoot td, 
+.woocommerce-page table.shop_table tfoot td, 
+.woocommerce table.shop_table tfoot th, 
+.woocommerce-page table.shop_table tfoot th,
+.woocommerce table.shop_table td, 
+.woocommerce-page table.shop_table td,
+.woocommerce table.shop_table th, 
+.woocommerce-page table.shop_table th {
+	text-align: right;
+	border: none !important;
+}
+.woocommerce table.shop_table tr {
+	border-bottom: 1px solid #dedede;
+}
+/**
+* Visual Composer Overrides
+*/
+.vc_btn {
+	margin-right: inherit;
+	margin-left: 10px;
+}

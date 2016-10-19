@@ -1,0 +1,27 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Visser Labs Updater\n"
+"POT-Creation-Date: 2013-07-24 10:27+1000\n"
+"PO-Revision-Date: 2013-07-24 10:28+1000\n"
+"Last-Translator: Luke Carbis <luke@visser.com.au>\n"
+"Language-Team: Visser Labs <support@visser.com.au>\n"
+"Language: British English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e;_x;_n\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../visser-labs-updater.php:125
+msgid ""
+"An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?"
+"\" onclick=\"document.location.reload(); return false;\">Try again</a>"
+msgstr ""
+"An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?"
+"\" onclick=\"document.location.reload(); return false;\">Try again</a>"
+
+#: ../visser-labs-updater.php:131
+msgid "An unknown error occurred."
+msgstr "An unknown error occurred."

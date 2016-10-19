@@ -1,0 +1,692 @@
+/******************************
+*
+*  RoyalSlider White Centered Controls Skin
+*
+*    1. Arrows 
+*    2. Bullets
+*    3. Thumbnails
+*    4. Tabs
+*    5. Fullscreen button
+*    6. Play/close video button
+*    7. Preloader
+*    8. Caption
+*	 9. Rosie theme specific rules
+*    
+*  Sprite: 'rs-minimal-white.png', 'arrow.png', 'small-arrow.png'
+* 
+******************************/
+
+
+/***************
+*
+*  1. Arrows
+*
+****************/
+
+.rsMinCW .rsArrow {
+	height: 139px;
+	width: 70px;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 21;
+}
+
+.rsMinCW .rsArrowLeft { left: 30px; top: 50%; }
+.rsMinCW .rsArrowRight { right: 30px; top: 50%; }
+
+.rsMinCW .rsArrowIcn {		
+	width: 70px;
+	height: 139px;
+	margin-top: -70px;	
+	text-align: center;
+	line-height: 32px;
+	position: absolute;
+	cursor: pointer;
+	background: url(arrow.png) no-repeat;	
+	
+	transition: all .2s;
+		-webkit-transition: all .2s;
+		
+	opacity: .5;
+		-moz-opacity: .5;
+		-webkit-opacity: .5;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+		filter: alpha(opacity=50);			
+}
+.rsMinCW .rsArrowIcn:hover {
+	opacity: 1;
+		-moz-opacity: 1;
+		-webkit-opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity=100);	
+}
+
+.rsMinCW.rsHor .rsArrowLeft .rsArrowIcn { background-position: 0 -139px; }
+.rsMinCW.rsHor .rsArrowRight .rsArrowIcn { background-position: 0 0; }
+
+.rsMinCW .rsArrowDisabled .rsArrowIcn { opacity: .3 !important; filter: alpha(opacity=30);  *display: none; }
+
+@media only screen and (max-width: 767px) {
+	.rsMinCW .rsArrow {
+		height: 66px;
+		width: 33px;
+	}
+	
+	.rsMinCW .rsArrowLeft { left: 30px; top: 50%; }
+	.rsMinCW .rsArrowRight { right: 30px; top: 50%; }
+	
+	.rsMinCW .rsArrowIcn {		
+		width: 33px;
+		height: 66px;
+		margin-top: -35px;
+		background: url(arrow-small.png) no-repeat;			
+	}
+	
+	.rsMinCW.rsHor .rsArrowLeft .rsArrowIcn { background-position: 0 -66px; }
+	.rsMinCW.rsHor .rsArrowRight .rsArrowIcn { background-position: 0 0; }
+	
+	.infoBlock { 
+		top: inherit !important; 
+		width: 100%; max-width: 
+		100% !important; 
+		bottom: 25px; left: 0 !important; 
+	}
+	
+	.rsNav.rsBullets {
+		bottom: 0 !important;
+	}
+}
+
+/***************
+*
+*  2. Bullets
+*
+****************/
+
+.rsMinCW .rsBullets {
+	position: absolute;
+	bottom: 14px;
+	z-index: 35;
+	height: auto;
+
+	text-align: center;
+	line-height: 20px;
+	overflow: hidden;
+	
+	width: 100%;
+}
+.rsMinCW .rsBullet {
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	*display:inline; 
+	*zoom:1;
+	padding: 6px 5px 6px 4px;
+	cursor: pointer;
+}
+.rsMinCW .rsBullet span {
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #CCC;
+	background: rgba(255,255,255,0.5);
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+	
+	opacity:0.5;
+		-moz-opacity:0.5;
+		-webkit-opacity:0.5;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+		filter: alpha(opacity=50);
+}
+.rsMinCW .rsBullet.rsNavSelected span {
+	opacity:1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity=100);
+	/*background-position: 0 -20px;*/
+}
+
+
+
+
+
+/***************
+*
+*  3. Thumbnails
+*
+****************/
+
+.rsMinCW .rsThumbsHor {
+	width: 100%;
+	height: 72px;
+}
+.rsMinCW .rsThumbsVer {
+	width: 96px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.rsMinCW.rsWithThumbsHor .rsThumbsContainer {
+	position: relative;
+	height: 100%;
+	max-width: none !important;	
+}
+.rsMinCW.rsWithThumbsVer .rsThumbsContainer {
+	position: relative;
+	width: 100%;
+}
+.rsMinCW .rsThumb {
+	float: left;
+	overflow: hidden;
+	width: 96px;
+	height: 72px;
+	max-width: auto !important;
+}
+.rsMinCW .rsThumb img {
+	width: 100%;
+	height: 100%;
+}
+.rsMinCW .rsThumb.rsNavSelected {
+	background: #333;
+}
+.rsMinCW .rsThumb.rsNavSelected img {
+	filter: alpha(opacity=40);
+	opacity: 0.7;
+}
+.rsMinCW .rsThumb.rsNavSelected span.thumbIco {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border: 2px solid #FFF;
+	border: 2px solid rgba(255,255,255,0.9);
+	-webkit-backface-visibility: hidden;
+} 
+.rsMinCW .rsTmb {
+	display: block;
+}
+
+
+
+
+/* Thumbnails arrow icons */
+.rsMinCW .rsThumbsArrow {
+	height: 100%;
+	width: 20px;
+	position: absolute;
+	display: block;
+	cursor: pointer;	
+	z-index: 21;	
+}
+.rsMinCW.rsWithThumbsVer .rsThumbsArrow {
+	width: 100%;
+	height: 20px;
+}
+.rsMinCW.rsWithThumbsVer .rsThumbsArrowLeft { top: 0; left: 0; }
+.rsMinCW.rsWithThumbsVer .rsThumbsArrowRight { bottom: 0;  left: 0; }
+
+.rsMinCW.rsWithThumbsHor .rsThumbsArrowLeft { left: 0; top: 0; }
+.rsMinCW.rsWithThumbsHor .rsThumbsArrowRight { right: 0; top:0; }
+
+.rsMinCW .rsThumbsArrowIcn {		
+	width: 16px;
+	height: 16px;
+	top: 50%;
+	left: 50%;
+	margin-top:-8px;	
+	margin-left: -8px;
+	position: absolute;	
+	cursor: pointer;	
+	background: url('rs-minimal-white.png');
+}
+
+.rsMinCW.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -128px -32px; }
+.rsMinCW.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -128px -48px; }
+
+.rsMinCW.rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -144px -32px; }
+.rsMinCW.rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -144px -48px; }
+
+.rsMinCW .rsThumbsArrowDisabled { display: none !important; }
+
+/* Thumbnails resizing on smaller screens */
+@media screen and (min-width: 0px) and (max-width: 800px) {
+	.rsMinCW .rsThumb {
+		width: 59px;
+		height: 44px;
+	}
+	.rsMinCW .rsThumbsHor {
+		height: 44px;
+	}
+	.rsMinCW .rsThumbsVer {
+		width: 59px;
+	}
+}
+
+
+
+
+/***************
+*
+*  4. Tabs
+*
+****************/
+
+.rsMinCW .rsTabs {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	text-align:center;
+	overflow: hidden; padding-top: 12px; position: relative;
+}
+.rsMinCW .rsTab {
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	height: auto;
+	width: auto;
+	color: #333;
+	padding: 5px 13px 6px;
+	min-width: 72px;
+	border: 1px solid #D9D9DD;
+	border-right: 1px solid #f5f5f5;
+	text-decoration: none;
+
+	background-color: #000;
+	background-image: -webkit-linear-gradient(top, #fefefe, #f4f4f4); 
+	background-image:    -moz-linear-gradient(top, #fefefe, #f4f4f4);
+	background-image:         linear-gradient(to bottom, #fefefe, #f4f4f4);
+
+	*display:inline; 
+	*zoom:1;
+}
+.rsMinCW .rsTab:first-child {
+	-webkit-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.rsMinCW .rsTab:last-child { 
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+
+	border-right:  1px solid #cfcfcf;
+}
+.rsMinCW .rsTab:active { 
+	border: 1px solid #D9D9DD;   
+	background-color: #f4f4f4;
+	box-shadow:  0 1px 4px rgba(0, 0, 0, 0.2) inset;
+}
+.rsMinCW .rsTab.rsNavSelected { 
+	color: #000;
+	border: 1px solid #999;
+	text-shadow: 1px 1px #838383;
+	box-shadow: 0 1px 9px rgba(102, 102, 102, 0.65) inset;
+	background: #ACACAC;
+	background-image: -webkit-linear-gradient(top, #ACACAC, #BBB);
+	background-image: -moz-llinear-gradient(top, #ACACAC, #BBB);
+	background-image: linear-gradient(to bottom, #ACACAC, #BBB);
+}
+
+
+
+
+
+/***************
+*
+*  5. Fullscreen button
+*
+****************/
+
+.rsMinCW .rsFullscreenBtn {
+	right: 0;
+	top: 0;
+	width: 44px;
+	height: 44px;
+	z-index: 22;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	
+}
+.rsMinCW .rsFullscreenIcn {
+	display: block;
+	margin: 6px;
+	width: 32px;
+	height: 32px;
+
+	background: url('rs-minimal-white.png') 0 0 transparent;
+}
+.rsMinCW .rsFullscreenIcn:hover {
+	opacity: 0.8;
+}
+.rsMinCW.rsFullscreen .rsFullscreenIcn {
+	background-position: -32px 0;
+}
+
+
+
+
+
+/***************
+*
+*  6. Play/close video button
+*
+****************/
+
+.rsMinCW .rsPlayBtn {
+	-webkit-tap-highlight-color:rgba(0,0,0,0.3);
+	width:64px;
+	height:64px;
+	margin-left:-32px;
+	margin-top:-32px;
+	cursor: pointer;
+}
+.rsMinCW .rsPlayBtnIcon {
+	width:64px;
+	display:block;
+	height:64px;
+	line-height:64px;
+	text-align:center;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	transition: .3s;
+
+	background-color: #000;
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #000;
+	
+	font-family:"FontAwesome";
+	font-size: 22px;
+	
+	color: #fff;
+	
+}
+.rsMinCW .rsPlayBtnIcon:before {	
+	content: "\f04b";
+}
+.rsMinCW .rsPlayBtn:hover .rsPlayBtnIcon {
+	color: #000;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.75);
+	*background-color: #fff;
+}
+
+.rsMinCW .rsBtnCenterer {
+	position:absolute;
+	left:50%;
+	top:50%;
+	width: 64px;
+	height: 64px;
+}
+.rsMinCW .rsCloseVideoBtn {
+	right: 12px;
+	top: 0;
+	width: 32px;
+	height: 32px;
+	z-index: 500;
+	position: absolute;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+	
+}
+.rsMinCW .rsCloseVideoBtn.rsiOSBtn {
+	top: -38px;
+	right: -6px;
+}
+
+.rsMinCW .rsCloseVideoIcn {
+	margin: 6px;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	transition: .3s;	
+	
+	font-family:"FontAwesome";
+	font-size: 14px;
+	
+	color: #fff;	
+	background-color: #000;
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #000;
+}
+.rsMinCW .rsCloseVideoIcn:before {
+	content: "\f00d";
+}
+.rsMinCW .rsCloseVideoIcn:hover {
+	color: #000;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.75);
+	*background-color: #fff;	
+}
+
+
+
+/***************
+*
+*  7. Preloader
+*
+****************/
+
+.rsMinCW .rsPreloader {
+	width:20px;
+	height:20px;
+	background-image:url(../preloaders/preloader-white.gif);
+
+	left:50%;
+	top:50%;
+	margin-left:-10px;
+	margin-top:-10px;	
+}
+
+
+
+
+/***************
+*
+*  8. Global caption
+*
+****************/
+.rsMinCW .rsGCaption {
+	position: absolute;
+	float: none;
+	bottom: 6px;
+	left: 6px;
+	text-align: left;
+
+	background: #000;
+    background: rgba(0,0,0, 0.75);
+
+	color: #FFF;
+	padding: 2px 8px;
+	width: auto;
+	font-size: 12px;
+	border-radius: 2px;
+}
+
+/***************
+*
+*  9. Rosie theme specific rules
+*
+****************/
+.postGallerySlider {
+	width: 100% !important;
+}
+
+.postGallerySlider .rsImg.rsMainSlideImage {
+	margin: 0 !important;
+	display: block;
+}
+
+
+#royal-nearby-full .rsGCaption {
+	position: absolute;
+	bottom: -9%;
+	color: #fff;
+}
+
+#royal-nearby-full .rsGCaption h4,
+#royal-nearby-full .rsGCaption p {
+	color: #fff;	
+}
+
+.visibleNearby {
+  width: 100%;
+  padding-top: 25px;
+}
+.visibleNearby .rsGCaption {
+  font-size: 16px;
+  line-height: 18px;
+  padding: 12px 0 16px;
+  background-color : transparent;
+  color: #000000;
+  width: 100%;
+  position: static;
+  float: left;
+  left: auto;
+  bottom: auto;
+  text-align: center;
+}
+.visibleNearby .rsGCaption span {
+  display: block;
+  clear: both;
+  font-size: 14px;
+  line-height: 22px;
+}
+.visibleNearby .rsGCaption h4,
+.visibleNearby .rsGCaption p {
+	padding: 0 !important;
+}
+
+
+/* Scaling transforms */
+.visibleNearby .rsSlide img {
+  opacity: 0.45 !important;
+  -webkit-transition: all 0.3s ease-out !important;
+  -moz-transition: all 0.3s ease-out !important;
+  transition: all 0.3s ease-out !important;
+
+  -webkit-transform: scale(0.9) !important;  
+  -moz-transform: scale(0.9) !important; 
+  -ms-transform: scale(0.9) !important;
+  -o-transform: scale(0.9) !important;
+  transform: scale(0.9) !important;
+}
+.visibleNearby .rsActiveSlide img {
+  opacity: 1 !important;
+  -webkit-transform: scale(1) !important;  
+  -moz-transform: scale(1) !important; 
+  -ms-transform: scale(1) !important;
+  -o-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+
+.rsMinCW .infoBlock {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  left: auto;
+  max-width: 25%;
+  padding-bottom: 0;
+  overflow: hidden;
+  padding: 12px 18px;
+}
+
+.rsMinCW .infoBlockBlack {
+  color: #FFF;
+  background: #000;
+  background: rgba(0,0,0,0.75);
+}
+
+.rsMinCW .infoBlockWhite{
+  color: #000;
+  background: #fff;
+  background: rgba(255,255,255,0.75);
+}
+
+.rsMinCW .infoBlockTopLeft {
+  left: 30px;
+  right: auto;
+}
+
+.rsMinCW .infoBlockTopRight {
+  right: 30px;
+  left: auto;
+}
+
+.rsMinCW .infoBlockBottomLeft {
+  left: 30px;
+  bottom: 30px;
+  top: auto;
+}
+
+.rsMinCW .infoBlockBottomRight {
+  right: 30px;
+  bottom: 30px;
+  top: auto;
+}
+
+.rsMinCW .infoBlockBlack h1,
+.rsMinCW .infoBlockBlack h2,
+.rsMinCW .infoBlockBlack h3,
+.rsMinCW .infoBlockBlack h4,
+.rsMinCW .infoBlockBlack h5,
+.rsMinCW .infoBlockBlack h6 {
+	color: #ffffff !important;
+}
+
+.rsMinCW .infoBlockWhite h1,
+.rsMinCW .infoBlockWhite h2,
+.rsMinCW .infoBlockWhite h3,
+.rsMinCW .infoBlockWhite h4,
+.rsMinCW .infoBlockWhite h5,
+.rsMinCW .infoBlockWhite h6 {
+	color: #000000 !important;
+}
+
+.rsMinCW .infoBlock a {
+  color: #FFF;
+  text-decoration: underline;
+}
+.rsMinCW .infoBlock p:empty {	
+	display: none;
+}
+
+.rsMinCW.rsVer .rsArrow {
+	width: 100%;
+	height: 44px;
+}
+
+.rsMinCW.rsVer .rsArrowLeft { top: 12px; left: 0; }
+.rsMinCW.rsVer .rsArrowRight { bottom: 12px;  left: 0; }
+
+.rsMinCW.rsVer .rsArrowLeft .rsArrowIcn { background-position: -96px -32px; }
+.rsMinCW.rsVer .rsArrowRight .rsArrowIcn { background-position: -96px -64px; }
+
+.rsMinCW.rsVer .rsArrowIcn {		
+	width: 32px;
+	height: 32px;
+	top: 50%;
+	left: 50%;
+	margin-top:-16px;	
+	margin-left: -16px;
+
+	position: absolute;	
+}

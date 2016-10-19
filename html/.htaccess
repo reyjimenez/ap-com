@@ -1,0 +1,51 @@
+
+# BEGIN GD-SSL
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_USER_AGENT} ^(.+)$
+RewriteCond %{SERVER_NAME} ^altmanplants\.com$
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+Header add Strict-Transport-Security "max-age=300"
+</IfModule>
+# END GD-SSL
+
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+redirect 301 /index.htm https://www.altmanplants.com/
+redirect 301 /index.html https://www.altmanplants.com/
+redirect 301 /company/aboutus.html https://www.altmanplants.com/about-us/
+redirect 301 /company/location.html https://www.altmanplants.com/about-us/locations/
+redirect 301 /company/employ.html https://www.altmanplants.com/opportunities/
+redirect 301 /press/index.html https://www.altmanplants.com/press-room/
+redirect 301 /cfahr/index.html https://www.altmanplants.com/about-us/affilitated-companies/center-for-applied-horticultural-research/
+redirect 301 /company/floragem.html https://www.altmanplants.com/about-us/affilitated-companies/floragem/
+redirect 301 /company/contactus.html https://www.altmanplants.com/contact-us/
+redirect 301 /cactus/index.html https://www.altmanplants.com/plant-shop/
+redirect 301 /products/index.html https://www.altmanplants.com/brands/
+redirect 301 /viva/index.html https://www.altmanplants.com/brands/viva-garden-plants/
+redirect 301 /specialty/venusflytrap.html https://www.altmanplants.com/venusflytrap/
+redirect 301 /garden/articles/index.html https://www.altmanplants.com/plant-care-information/
+redirect 301 /garden/index.html https://www.altmanplants.com/plant-care-information/
+redirect 301 /waterwise/index.html https://www.altmanplants.com/at-home-with-succulents/
+redirect 301 /waterwise/freeEbook.html https://www.altmanplants.com/at-home-with-succulents/
+redirect 301 /waterwise/landscapedesign.html https://www.altmanplants.com/at-home-with-succulents/
+redirect 301 /waterwise/patiogarden.html https://www.altmanplants.com/at-home-with-succulents/
+redirect 301 /waterwise/bordergarden.html https://www.altmanplants.com/at-home-with-succulents/
+redirect 301 /waterwise/outdoorliving.html https://www.altmanplants.com/at-home-with-succulents/
+redirect 301 /contact.html https://altmanplants.com/contact-us/
+redirect 301 /mobile/contact.html https://altmanplants.com/contact-us/
+redirect 301 /articles/index.html https://altmanplants.com/resources/articles/
+redirect 301 /main https://www.altmanplants.com/

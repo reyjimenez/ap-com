@@ -1,0 +1,142 @@
+/* Mega Menu Styles */
+.mega-menu ul, .mega-menu ul li {list-style: none;}
+.mega-menu ul {position: relative; padding: 0; margin: 0;}
+.mega-menu ul li ul {display: none;}
+.mega-menu .sub-menu {display: none;}
+.mega-menu .sub-menu ul {display: block;}
+#nav-primary>nav>div>ul {
+	list-style: none; 
+	position: relative; 
+	padding: 0; 
+	margin: 0;
+}
+#nav-primary>nav>div>ul .sub-menu ul {display: block;}
+#nav-primary>nav>div>ul {
+	width: 100%; 
+	height: 60px;
+	position: relative;
+}
+#nav-primary>nav>div>ul li {
+	float: left; 
+	margin: 0; 
+	padding: 0; 
+}
+#nav-primary>nav>div>ul li a {
+	float: left; 
+	display: block; 
+	text-decoration: none;
+}
+#nav-primary>nav>div>ul>li>a {
+	line-height: 60px;
+	box-sizing: border-box;
+	-webkit-transition: all .2s; 
+	transition: all .2s;
+}
+/*#nav-primary.right>nav>div>ul>li>a {
+	padding: 0 35px 0 0 !important;
+}
+#nav-primary.left>nav>div>ul>li>a {
+	padding: 0 0 0 35px !important;
+}*/
+#nav-primary>nav>div>ul>li {
+	margin: 0 13px 0 13px;
+}
+/*#nav-primary.left>nav>div>ul>li {
+	margin: 0 0 0 35px !important;
+}*/
+#nav-primary>nav>div>ul>li>a,
+#nav-primary>nav>div>ul>li.current_page_item>a,
+#nav-primary>nav>div>ul>li.current-menu-parent>a,
+#nav-primary>nav>div>ul>li.mega-menu-hover>a {
+	-webkit-transition: all .4s;
+	transition: all .4s;	
+}
+#nav-primary>nav>div>ul .row {
+	width: 100%;/* !important;*/
+	padding: 10px 0;
+}
+#nav-primary>nav>div>ul .row li,
+#nav-primary>nav>div>ul>li{
+/*#nav-primary>nav>div>ul>li:not(.menu-item-search){*/
+	display: inline-block !important;
+	float: none !important;
+}
+#nav-primary>nav>div>ul .sub li {text-align: left;}
+#nav-primary>nav>div>ul .row li {
+	float: left !important;
+	text-align: left;
+}
+#nav-primary>nav>div>ul .row>li {border-left: 1px solid rgba(255,255,255,0.3);}
+#nav-primary>nav>div>ul .row>li:first-child {border-left: none !important;}
+#nav-primary>nav>div>ul .sub-container.mega {width: auto;}/* !important*/
+#nav-primary>nav>div>ul li .sub-container {position: absolute;}
+#nav-primary>nav>div>ul li .sub-menu.sub {padding: 0;}
+#nav-primary>nav>div>ul li .sub-menu .row {
+	width: 100%; 
+	overflow: hidden;
+	clear: both;
+}
+#nav-primary .sub-container>.sub-menu{
+	box-shadow: 0px 10px 10px 5px rgba(119, 119, 119, 0.05);
+	-moz-box-shadow: 0px 10px 10px 5px rgba(119, 119, 119, 0.05);
+	-webkit-box-shadow: 0px 10px 10px 5px rgba(119, 119, 119, 0.05)
+}
+#nav-primary>nav>div>ul li .sub-menu li {
+	list-style: none; 
+	float: none; 
+	width: 220px; 
+}
+#nav-primary>nav>div>ul li .sub-menu li.mega-hdr {
+	margin: 0 10px 0 0; 
+	float: left;
+}
+#nav-primary>nav>div>ul li .sub-menu li.mega-hdr.last {margin-right: 0;}
+#nav-primary>nav>div>ul li .sub-menu a {
+	background: none; 
+	display: block; 
+	float: none; 
+}
+#nav-primary>nav>div>ul .sub-menu li a,
+#nav-primary>nav>div>ul .sub-menu li.mega-hdr li a {padding: 3px 13px;}
+#nav-primary>nav>div>ul .sub-menu ul li {padding-right: 0;}
+#nav-primary>nav>div>ul li .sub-container.non-mega>ul {padding:10px 0;}
+#nav-primary>nav>div>ul li .sub-container.non-mega li {
+	padding: 0; 
+	width: 240px; 
+	margin: 0;
+}
+#nav-primary>nav>div>ul li .sub-container.non-mega li a {padding: 3px 13px;}
+.mega-menu li a.dc-mega {position: relative;}
+/*.dc-mega-icon{display: block; position: absolute; top: 0; right: 0px; width: 8px; height: 6px;font-size:12px; font-family:'ozythemes';}*/
+/*.dc-mega-icon:after {content:"\e445";}*/
+.dc-mega-icon{display: none;}
+#nav-primary>nav>div>ul h4 {
+	padding: 10px 13px 10px 13px !important;
+	font-weight: 700 !important;
+	line-height:110% !important;
+}
+#nav-primary>nav>div>ul>li:before {
+	display: block;
+	float:left;
+	padding-right:6px;
+	-webkit-transition: all .4s; 
+	transition: all .4s;	
+}
+
+#nav-primary .mega-menu-html-shortcode>div.row {
+	padding:0 !important;
+}
+#nav-primary .mega-menu-html-shortcode>div.row>li {
+	padding:20px;
+}
+#nav-primary .mega-menu-html-shortcode>div.row>li,
+#nav-primary .mega-menu-html-shortcode>div.row>li>.sub-menu>li {
+	width:100%;
+}
+
+#nav-primary .mega-menu-html-shortcode * {
+	line-height:1.5em !important;
+	/*width:100% !important;*/
+}
+
+#nav-primary .sub-container>.sub-menu{box-shadow: 0px 10px 10px 5px rgba(119, 119, 119, 0.05);-moz-box-shadow: 0px 10px 10px 5px rgba(119, 119, 119, 0.05);-webkit-box-shadow: 0px 10px 10px 5px rgba(119, 119, 119, 0.05)}

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Orders>
+ <Order>
+  <OrderId>4523</OrderId>
+  <OrderNumber></OrderNumber>
+  <OrderDate>2016-09-23 10:19:13</OrderDate>
+  <OrderStatus>processing</OrderStatus>
+  <BillingFirstName>Sophia</BillingFirstName>
+  <BillingLastName>Gordon Charnov</BillingLastName>
+  <BillingFullName>Sophia Gordon Charnov</BillingFullName>
+  <BillingCompany></BillingCompany>
+  <BillingAddress1>5298 Belardo Drive</BillingAddress1>
+  <BillingAddress2></BillingAddress2>
+  <BillingCity>San Diego</BillingCity>
+  <BillingState>CA</BillingState>
+  <BillingPostCode>92124</BillingPostCode>
+  <BillingCountry>US</BillingCountry>
+  <BillingEmail>sgordoncharnov@san.rr.com</BillingEmail>
+  <BillingPhone>858-5986284</BillingPhone>
+  <ShippingFirstName>Sophia</ShippingFirstName>
+  <ShippingLastName>Gordon Charnov</ShippingLastName>
+  <ShippingFullName>Sophia Gordon Charnov</ShippingFullName>
+  <ShippingCompany></ShippingCompany>
+  <ShippingAddress1>5298 Belardo Drive</ShippingAddress1>
+  <ShippingAddress2></ShippingAddress2>
+  <ShippingCity>San Diego</ShippingCity>
+  <ShippingState>CA</ShippingState>
+  <ShippingPostCode>92124</ShippingPostCode>
+  <ShippingCountry>US</ShippingCountry>
+  <ShippingMethodId>ups:03</ShippingMethodId>
+  <ShippingMethod>Ground (UPS Shipping)</ShippingMethod>
+  <PaymentMethodId>authorize_net_aim</PaymentMethodId>
+  <PaymentMethod>Credit Card</PaymentMethod>
+  <DiscountTotal>0</DiscountTotal>
+  <ShippingTotal>10.7</ShippingTotal>
+  <ShippingTaxTotal>0.9095</ShippingTaxTotal>
+  <OrderTotal>67.49</OrderTotal>
+  <FeeTotal>3.5</FeeTotal>
+  <TaxTotal>5.29</TaxTotal>
+  <CompletedDate>2016-09-23 10:19:13</CompletedDate>
+  <CustomerNote></CustomerNote>
+  <CustomerId>13</CustomerId>
+  <OrderLineItems>
+   <SKU>0850394</SKU>
+   <Quantity>3</Quantity>
+   <Price>8.00</Price>
+   <Meta>Size: 3.5&quot;</Meta>
+   <ItemName><![CDATA[<em>Echeveria </em>‘Neon Breakers’ <br />USPP 21406]]></ItemName>
+   <LineTotal>24.00</LineTotal>
+  </OrderLineItems>
+  <OrderLineItems>
+   <SKU>0850365</SKU>
+   <Quantity>3</Quantity>
+   <Price>8.00</Price>
+   <Meta>Size: 3.5&quot;</Meta>
+   <ItemName><![CDATA[<em>Echeveria</em> 'Cubic Frost™']]></ItemName>
+   <LineTotal>24.00</LineTotal>
+  </OrderLineItems>
+  <OrderNotes>
+   <OrderNote>
+    <Date>2016-09-23 10:19:14</Date>
+    <Author>WooCommerce</Author>
+    <Content>Item 0850394 variation #1744 stock reduced from 4 to 1.</Content>
+   </OrderNote>
+   <OrderNote>
+    <Date>2016-09-23 10:19:14</Date>
+    <Author>WooCommerce</Author>
+    <Content>Item 0850365 variation #1415 stock reduced from 3 to 0.</Content>
+   </OrderNote>
+   <OrderNote>
+    <Date>2016-09-23 10:19:13</Date>
+    <Author>WooCommerce</Author>
+    <Content>Authorize.Net AIM  Charge Approved: MasterCard ending in 3513 (expires 10/20) (Transaction ID 8662867450)</Content>
+   </OrderNote>
+   <OrderNote>
+    <Date>2016-09-23 10:19:13</Date>
+    <Author>WooCommerce</Author>
+    <Content>Order status changed from Pending Payment to Processing.</Content>
+   </OrderNote>
+  </OrderNotes>
+ </Order>
+ <Order>
+  <OrderId>4522</OrderId>
+  <OrderNumber></OrderNumber>
+  <OrderDate>2016-09-23 10:18:31</OrderDate>
+  <OrderStatus>processing</OrderStatus>
+  <BillingFirstName>Sophia</BillingFirstName>
+  <BillingLastName>Gordon Charnov</BillingLastName>
+  <BillingFullName>Sophia Gordon Charnov</BillingFullName>
+  <BillingCompany></BillingCompany>
+  <BillingAddress1>5298 Belardo Drive</BillingAddress1>
+  <BillingAddress2></BillingAddress2>
+  <BillingCity>San Diego</BillingCity>
+  <BillingState>CA</BillingState>
+  <BillingPostCode>92124</BillingPostCode>
+  <BillingCountry>US</BillingCountry>
+  <BillingEmail>sgordoncharnov@san.rr.com</BillingEmail>
+  <BillingPhone>858-5986284</BillingPhone>
+  <ShippingFirstName>Sophia</ShippingFirstName>
+  <ShippingLastName>Gordon Charnov</ShippingLastName>
+  <ShippingFullName>Sophia Gordon Charnov</ShippingFullName>
+  <ShippingCompany></ShippingCompany>
+  <ShippingAddress1>5298 Belardo Drive</ShippingAddress1>
+  <ShippingAddress2></ShippingAddress2>
+  <ShippingCity>San Diego</ShippingCity>
+  <ShippingState>CA</ShippingState>
+  <ShippingPostCode>92124</ShippingPostCode>
+  <ShippingCountry>US</ShippingCountry>
+  <ShippingMethodId>ups:03</ShippingMethodId>
+  <ShippingMethod>Ground (UPS Shipping)</ShippingMethod>
+  <PaymentMethodId>authorize_net_aim</PaymentMethodId>
+  <PaymentMethod>Credit Card</PaymentMethod>
+  <DiscountTotal>0</DiscountTotal>
+  <ShippingTotal>10.7</ShippingTotal>
+  <ShippingTaxTotal>0.9095</ShippingTaxTotal>
+  <OrderTotal>67.49</OrderTotal>
+  <FeeTotal>3.5</FeeTotal>
+  <TaxTotal>5.29</TaxTotal>
+  <CompletedDate>2016-09-23 10:18:31</CompletedDate>
+  <CustomerNote></CustomerNote>
+  <CustomerId>13</CustomerId>
+  <OrderLineItems>
+   <SKU>0850394</SKU>
+   <Quantity>3</Quantity>
+   <Price>8.00</Price>
+   <Meta>Size: 3.5&quot;</Meta>
+   <ItemName><![CDATA[<em>Echeveria </em>‘Neon Breakers’ <br />USPP 21406]]></ItemName>
+   <LineTotal>24.00</LineTotal>
+  </OrderLineItems>
+  <OrderLineItems>
+   <SKU>0850365</SKU>
+   <Quantity>3</Quantity>
+   <Price>8.00</Price>
+   <Meta>Size: 3.5&quot;</Meta>
+   <ItemName><![CDATA[<em>Echeveria</em> 'Cubic Frost™']]></ItemName>
+   <LineTotal>24.00</LineTotal>
+  </OrderLineItems>
+  <OrderNotes>
+   <OrderNote>
+    <Date>2016-09-23 10:18:32</Date>
+    <Author>WooCommerce</Author>
+    <Content>Item 0850394 variation #1744 stock reduced from 7 to 4.</Content>
+   </OrderNote>
+   <OrderNote>
+    <Date>2016-09-23 10:18:32</Date>
+    <Author>WooCommerce</Author>
+    <Content>Item 0850365 variation #1415 stock reduced from 6 to 3.</Content>
+   </OrderNote>
+   <OrderNote>
+    <Date>2016-09-23 10:18:31</Date>
+    <Author>WooCommerce</Author>
+    <Content>Authorize.Net AIM  Charge Approved: MasterCard ending in 3513 (expires 10/20) (Transaction ID 8662865830)</Content>
+   </OrderNote>
+   <OrderNote>
+    <Date>2016-09-23 10:18:31</Date>
+    <Author>WooCommerce</Author>
+    <Content>Order status changed from Pending Payment to Processing.</Content>
+   </OrderNote>
+  </OrderNotes>
+ </Order>
+</Orders>

@@ -1,0 +1,35 @@
+/*
+Theme Name: Rosie
+Theme URI: http://rosie.freevision.me/
+Author: freevision
+Author URI: http://themeforest.net/user/freevision/portfolio
+Description: Rosie is multi-purpose, responsive, retina ready WordPress theme suited for business websites, e-shops, agencies (includes one page parallax layout), nonprofits, blogs, portfolios and others. Great effort was put into making it easy to use and to be totally flexible and customizable theme.
+Version: 1.6
+Text Domain: vp_textdomain
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, white, yellow, tan, light, one-column, two-columns, right-sidebar, fluid-layout, fixed-layout, responsive-layout, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Template: rosie
+*/
+
+@import url("../rosie/style.css");
+
+ul#emma-form-elements .emma-form-label {	
+	width:10% !important;
+}
+
+#footer-widget-bar li, #sidebar .widget li {
+    border-bottom: none;
+    padding: 8px 0 8px 0;
+}
+
+div.emma-status, div.emma-status.emma-alert {
+	
+	color: #000 !important;
+}
+
+#footer-widget-bar input[type=submit] {
+	margin: 10px;
+	background-color: rgba(21,110,84,1) !important
+
+}
